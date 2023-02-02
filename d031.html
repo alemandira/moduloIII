@@ -29,17 +29,28 @@
             margin: auto;
         }
 
-        thead,
-        tfoot {
+        thead, tfoot {
             background-color: gray;
             color: white;
         }
 
-        td,
-        th {
+        td, th {
             border: 1px solid black;
             height: 40px;
         }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightslategray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(240, 240, 27);
+            text-decoration: underline;
+        }
+
+
+
+        /*  tr:nth-child(odd) ou também (even) ou (2n) ou (2n-1) */
 
         .num {
             text-align: right;
